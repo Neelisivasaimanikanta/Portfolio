@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mini project</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+    </head>
+    <body class="container mt-3">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-items">
+                <a href="#home" class="nav-link" data-bs-toggle="tab" >Home</a>
+            </li>
+            <li class="nav-items">
+                <a href="#register" class="nav-link" data-bs-toggle="tab">Register</a>
+            </li>
+            <li class="nav-items">
+                <a href="#log-in" class="nav-link" data-bs-toggle="tab">Log-In</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade">
+                <h1 class="text-primary">Welcome to home page</h1>
+                <p> If you are a New User click on Register to Proceed.....</p><br>
+                <p>If you are already an user Click on Log-In to Continue...</p>
+            </div>
+
+
+
+            
+            <div class="tab-content">
+                <div id="register" class="tab-pane fade">
+                    <button type="button" class="btn btn-outline-info m-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Register Here
+                    </button>
+                    <div class="modal" id="myModal" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="text-info">Registration Form</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="w-50">
+                                        <div class="mb-3">
+                                            <label class="formlabel">Enter your name :</label>
+                                            <div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50">
+                                        <div class="mb-3">
+                                            <label class="formlabel">Enter your email :</label>
+                                            <div>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50">
+                                        <div class="mb-3">
+                                            <label class="formlabel">Enter your password :</label>
+                                            <div>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50">
+                                        <div class="mb-3">
+                                            <label class="formlabel">Enter your mobileNo :</label>
+                                            <div>
+                                                <input type="tel" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Select your city :</label>
+                                        <div>
+                                            <select class="form-select">
+                                                <option>Choose a City :</option>
+                                                <option>Rajahmundry</option>
+                                                <option>Kakinada</option>
+                                                <option>Visakhapattanam</option>
+                                                <option>Vijayawada</option>
+                                                <option>Hyderabad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Select your Gender :</label>
+                                        <div>
+                                            <input type="radio" name="gender" class="form-check-input me-2"><label class="form-check-label">Male</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" class="form-check-input me-2"><label class="form-check-label">Female</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" class="form-check-input me-2"><label class="form-check-label">Others</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Select your skills :</label>
+                                        <div class="form-check form-switch">
+                                            <input type="checkbox" class="form-check-input"><label class="form-check-label">Html</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input type="checkbox" class="form-check-input"><label class="form-check-label">Css</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input type="checkbox" class="form-check-input"><label class="form-check-label">Bootstrap</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input type="checkbox" class="form-check-input"><label class="form-check-label">JavaScript</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div id="log-in" class="tab-pane fade">
+                <button type="button" class="btn btn-danger m-4" data-bs-toggle="modal" data-bs-target="#mymodal">Log-In</button>
+                <div class="modal" id="mymodal" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="text-info">Log-In Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="w-50">
+                                    <div class="mb-3">
+                                        <label class="formlabel">Enter your name :</label>
+                                        <div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-50">
+                                    <div class="mb-3">
+                                        <label class="formlabel">Enter your password:</label>
+                                        <div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                               <button type="button" class="btn btn-primary">Login</button>
+                               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
